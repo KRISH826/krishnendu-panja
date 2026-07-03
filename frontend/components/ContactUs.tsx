@@ -4,7 +4,7 @@ import { Contact7 } from "@/constants/ContactData";
 export default function ContactUs() {
   return (
     <Contact7
-      subheading="CONNECT WITH US"
+      subheading="CONNECT WITH ME"
       heading="Let's Start a Conversation"
       nameLabel="Full Name *"
       namePlaceholder="John Doe"
@@ -16,12 +16,12 @@ export default function ContactUs() {
       enquiryPlaceholder="Select an enquiry type"
       enquiryOptions={[
         { value: "general", label: "General Inquiry" },
-        { value: "support", label: "Technical Support" },
-        { value: "sales", label: "Sales & Pricing" },
+        { value: "freelance", label: "Freelance Project" },
+        { value: "fulltime", label: "Full-time Opportunity" },
         { value: "partnership", label: "Partnership Opportunities" },
       ]}
       messageLabel="Message *"
-      messagePlaceholder="How can we help you today? Please provide as much detail as possible."
+      messagePlaceholder="How can I help you today? Please provide as much detail as possible."
       agreementText="I agree to the privacy policy and terms of service for this communication."
       buttonText="Send Message"
     />

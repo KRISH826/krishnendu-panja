@@ -160,7 +160,7 @@ export default function Hero3({
 
                 {/* ─── Main Content Area ─── */}
                 <div className="flex-1 container mx-auto flex flex-col justify-center pb-16 md:pb-24">
-                    <div className="max-w-2xl">
+                    <div className="max-w-4xl">
                         {/* Badge pill with shimmer */}
                         <motion.div
                             className="inline-flex items-center gap-2 mb-8 md:mb-10"
