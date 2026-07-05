@@ -283,9 +283,9 @@ export default function CareerData({
 
   return (
     <section className={cn('w-full bg-background py-8', className)}>
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto container">
 
-   
+
         <div className="mb-10 space-y-4 sm:mb-12">
 
           {badge && (
@@ -302,7 +302,7 @@ export default function CareerData({
               {headingHighlight && (
                 <span className="relative inline-block">
                   <span className="relative z-10 text-foreground">{headingHighlight}</span>
-       
+
                   <span
                     aria-hidden="true"
                     className="absolute inset-x-0 bottom-0.5 h-[6px] rounded-full bg-primary/15 dark:bg-primary/20"
@@ -312,7 +312,7 @@ export default function CareerData({
             </h2>
           )}
 
-    
+
           {description && (
             <p className="max-w-xl text-sm text-muted-foreground sm:text-base">
               {description}
