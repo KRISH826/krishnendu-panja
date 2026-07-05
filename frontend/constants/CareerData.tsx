@@ -297,8 +297,6 @@ export default function CareerData({
   return (
     <section className={cn('w-full bg-background py-8', className)}>
       <div className="mx-auto container">
-
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -321,7 +319,6 @@ export default function CareerData({
               {headingHighlight && (
                 <span className="relative inline-block">
                   <span className="relative z-10 text-foreground">{headingHighlight}</span>
-
                   <span
                     aria-hidden="true"
                     className="absolute inset-x-0 bottom-0.5 h-[6px] rounded-full bg-primary/15 dark:bg-primary/20"
