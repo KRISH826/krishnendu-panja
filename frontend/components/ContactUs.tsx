@@ -1,0 +1,29 @@
+import { Contact7 } from "@/constants/ContactData";
+
+
+export default function ContactUs() {
+  return (
+    <Contact7
+      subheading="CONNECT WITH ME"
+      heading="Let's Start a Conversation"
+      nameLabel="Full Name *"
+      namePlaceholder="John Doe"
+      emailLabel="Email Address *"
+      emailPlaceholder="john@example.com"
+      phoneLabel="Phone Number *"
+      phonePlaceholder="+1 (555) 000-0000"
+      enquiryLabel="Enquiry Type *"
+      enquiryPlaceholder="Select an enquiry type"
+      enquiryOptions={[
+        { value: "general", label: "General Inquiry" },
+        { value: "freelance", label: "Freelance Project" },
+        { value: "fulltime", label: "Full-time Opportunity" },
+        { value: "partnership", label: "Partnership Opportunities" },
+      ]}
+      messageLabel="Message *"
+      messagePlaceholder="How can I help you today? Please provide as much detail as possible."
+      agreementText="I agree to the privacy policy and terms of service for this communication."
+      buttonText="Send Message"
+    />
+  );
+}

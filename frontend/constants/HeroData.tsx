@@ -3,6 +3,7 @@
 // import LogoIcon from '@/assets/logo-icon';
 import { ArrowRight, ArrowDown, Globe } from 'lucide-react';
 import { motion } from 'motion/react';
+import Link from 'next/link';
 
 interface NavLink {
     label: string;
@@ -99,12 +100,12 @@ export default function Hero3({
                         transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
                     >
                         {/* Logo */}
-                        <a href="/" className="flex items-center gap-2.5 shrink-0 group">
+                        <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
                             {/* <LogoIcon className='size-8 text-white' /> */}
                             <span className="text-white text-xl font-semibold tracking-tight group-hover:tracking-wide transition-all duration-300">
                                 {brandName}
                             </span>
-                        </a>
+                        </Link>
 
                         {/* Center Nav Links */}
                         <div className="hidden lg:flex items-center gap-8 xl:gap-10">
@@ -160,7 +161,7 @@ export default function Hero3({
 
                 {/* ─── Main Content Area ─── */}
                 <div className="flex-1 container mx-auto flex flex-col justify-center pb-16 md:pb-24">
-                    <div className="max-w-2xl">
+                    <div className="max-w-4xl">
                         {/* Badge pill with shimmer */}
                         <motion.div
                             className="inline-flex items-center gap-2 mb-8 md:mb-10"
