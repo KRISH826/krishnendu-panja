@@ -10,7 +10,7 @@ export default function Home() {
       <HeroSection />
       <CareerSection />
       <FeatureSection />
-      <ContactUs/>
+      <ContactUs />
     </>
   );
 }

@@ -13,7 +13,7 @@ export default function FeaturesData() {
   return (
     <div className="theme-injected flex w-full flex-col items-center justify-center px-6 py-16">
       <h1 className="mb-12 max-w-3xl text-center text-3xl leading-[0.98] font-semibold md:text-5xl">
-        My Expertise & Work Culture
+        How I Work & Deliver Value
       </h1>
 
       <div className="grid w-full max-w-6xl grid-cols-1 gap-4 md:grid-cols-3">
@@ -24,13 +24,13 @@ export default function FeaturesData() {
                 <HiLightBulb className="h-5 w-5 text-orange-500" />
               </div>
             </div>
-            <h3 className="text-lg font-medium">Frontend Technologies</h3>
+            <h3 className="text-lg font-medium">High-Performance Code</h3>
             <p className="text-muted-foreground mb-3 text-sm">
-              HTML5, CSS3, JavaScript (ES6+), TypeScript
+              I write clean, highly optimized code ensuring blazing-fast load times, seamless user experiences, and minimal technical debt.
             </p>
             <div className="bg-muted dark:bg-muted/10 inline-flex rounded-lg p-0.5">
               <div className="text-muted-foreground inline-flex items-center rounded-md bg-white/80 px-2 py-1 text-[10px] font-medium shadow-[inset_0_-2px_0.5px_0px_rgba(0,0,0,0),inset_0px_2px_0_2px_rgba(255,255,255,1),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)] dark:bg-black/20 dark:shadow-[inset_0_-1px_0px_0px_rgba(0,0,0,0.1),inset_0px_1px_0px_0px_rgba(255,255,255,0.04),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)]">
-                Core Web
+                Performance First
               </div>
             </div>
           </CardContent>
@@ -43,13 +43,13 @@ export default function FeaturesData() {
                 <HiDatabase className="h-5 w-5 text-purple-500" />
               </div>
             </div>
-            <h3 className="mb-1 text-lg font-medium">Frameworks & Libraries</h3>
+            <h3 className="mb-1 text-lg font-medium">Rapid & Reliable Delivery</h3>
             <p className="text-muted-foreground mb-3 text-sm">
-              React.js, Next.js, Angular, React Redux, Redux Toolkit, RTK Query
+              Committed to meeting deadlines without ever compromising on quality. I utilize CI/CD for swift, automated, and safe deployments.
             </p>
             <div className="bg-muted dark:bg-muted/10 inline-flex rounded-lg p-0.5">
               <div className="text-muted-foreground inline-flex items-center rounded-md bg-white/80 px-2 py-1 text-[10px] font-medium shadow-[inset_0_-2px_0.5px_0px_rgba(0,0,0,0),inset_0px_2px_0_2px_rgba(255,255,255,1),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)] dark:bg-black/20 dark:shadow-[inset_0_-1px_0px_0px_rgba(0,0,0,0.1),inset_0px_1px_0px_0px_rgba(255,255,255,0.04),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)]">
-                Modern Stack
+                On-Time Execution
               </div>
             </div>
           </CardContent>
@@ -63,24 +63,24 @@ export default function FeaturesData() {
               </div>
             </div>
             <h3 className="mb-2 text-lg font-medium">
-              Development Practices & Work Culture
+              End-to-End Project Ownership
             </h3>
             <p className="text-muted-foreground mb-6 text-sm">
-              Responsive Design, Cross-Browser Compatibility, Frontend Architecture, CI/CD Pipeline, SEO. Built with Agile and User-Centered Design methodologies.
+              Whether working on freelance projects or enterprise solutions, I take full ownership of the product lifecycle—from gathering requirements and architectural design to final deployment and maintenance.
             </p>
 
             <div className="space-y-3">
               <div className="bg-muted dark:bg-muted/10 flex items-center justify-between rounded-md px-3 py-2 text-xs">
-                <span className="text-muted-foreground">Accessibility</span>
-                <span className="font-medium">WCAG 2.1 Compliance</span>
+                <span className="text-muted-foreground">Collaboration</span>
+                <span className="font-medium">Direct & Transparent</span>
               </div>
               <div className="bg-muted dark:bg-muted/10 flex items-center justify-between rounded-md px-3 py-2 text-xs">
-                <span className="text-muted-foreground">Backend</span>
-                <span className="font-medium">Node.js, Express</span>
+                <span className="text-muted-foreground">Workflows</span>
+                <span className="font-medium">Agile / Iterative</span>
               </div>
               <div className="bg-muted dark:bg-muted/10 flex items-center justify-between rounded-md px-3 py-2 text-xs">
-                <span className="text-muted-foreground">Databases</span>
-                <span className="font-medium">MongoDB, PostgreSQL</span>
+                <span className="text-muted-foreground">Support</span>
+                <span className="font-medium">Continuous Iteration</span>
               </div>
             </div>
           </CardContent>
@@ -88,7 +88,7 @@ export default function FeaturesData() {
           <div className="px-6 pb-6">
             <div className="bg-muted dark:bg-muted/10 inline-flex rounded-lg p-0.5">
               <div className="text-muted-foreground inline-flex items-center rounded-md bg-white/80 px-2 py-1 text-[10px] font-medium shadow-[inset_0_-2px_0.5px_0px_rgba(0,0,0,0),inset_0px_2px_0_2px_rgba(255,255,255,1),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)] dark:bg-black/20 dark:shadow-[inset_0_-1px_0px_0px_rgba(0,0,0,0.1),inset_0px_1px_0px_0px_rgba(255,255,255,0.04),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)]">
-                Best Practices
+                Freelance Ready
               </div>
             </div>
           </div>
@@ -101,13 +101,13 @@ export default function FeaturesData() {
                 <HiSwitchHorizontal className="h-5 w-5 text-pink-500" />
               </div>
             </div>
-            <h3 className="mb-1 text-lg font-medium">Styling Frameworks</h3>
+            <h3 className="mb-1 text-lg font-medium">Client-Centric Approach</h3>
             <p className="text-muted-foreground mb-3 text-sm">
-              CSS, Tailwind CSS, Material UI, Bootstrap, Sass, SCSS, Prime NG
+              I partner closely with clients to deeply understand their business goals and translate them into robust, scalable software.
             </p>
             <div className="bg-muted dark:bg-muted/10 inline-flex rounded-lg p-0.5">
               <div className="text-muted-foreground inline-flex items-center rounded-md bg-white/80 px-2 py-1 text-[10px] font-medium shadow-[inset_0_-2px_0.5px_0px_rgba(0,0,0,0),inset_0px_2px_0_2px_rgba(255,255,255,1),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)] dark:bg-black/20 dark:shadow-[inset_0_-1px_0px_0px_rgba(0,0,0,0.1),inset_0px_1px_0px_0px_rgba(255,255,255,0.04),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)]">
-                Pixel Perfect
+                Clear Communication
               </div>
             </div>
           </CardContent>
@@ -120,13 +120,13 @@ export default function FeaturesData() {
                 <HiSupport className="h-5 w-5 text-blue-500" />
               </div>
             </div>
-            <h3 className="mb-1 text-lg font-medium">Design & Collaboration</h3>
+            <h3 className="mb-1 text-lg font-medium">Future-Proof Solutions</h3>
             <p className="text-muted-foreground mb-3 text-sm">
-              Figma, Adobe Photoshop, GitHub, AWS, GCP
+              Building maintainable architectures that adapt and grow. I ensure the codebase is clean, well-documented, and easy to scale.
             </p>
             <div className="bg-muted dark:bg-muted/10 inline-flex rounded-lg p-0.5">
               <div className="text-muted-foreground inline-flex items-center rounded-md bg-white/80 px-2 py-1 text-[10px] font-medium shadow-[inset_0_-2px_0.5px_0px_rgba(0,0,0,0),inset_0px_2px_0_2px_rgba(255,255,255,1),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)] dark:bg-black/20 dark:shadow-[inset_0_-1px_0px_0px_rgba(0,0,0,0.1),inset_0px_1px_0px_0px_rgba(255,255,255,0.04),0_0px_2px_0_rgba(0,0,0,0.08),0_1px_4px_0_rgba(0,0,0,0.05)]">
-                Cloud & Team
+                Sustainable Engineering
               </div>
             </div>
           </CardContent>
