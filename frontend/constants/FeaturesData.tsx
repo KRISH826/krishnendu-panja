@@ -8,14 +8,15 @@ import {
   HiDatabase,
   HiSwitchHorizontal,
 } from 'react-icons/hi';
+import { motion } from "motion/react";
 
 export default function FeaturesData() {
   return (
     <div className="theme-injected flex w-full flex-col items-center justify-center">
       <div className="container">
-        <h1 className="sm:mb-12 mb-6 text-center text-3xl leading-[0.98] font-semibold md:text-5xl">
+        <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="sm:mb-12 mb-6 text-center text-3xl leading-[0.98] font-semibold md:text-5xl">
           How I Work & Deliver Value
-        </h1>
+        </motion.h1>
         <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-3">
           <Card className="bg-muted/50 rounded-3xl ring-0 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
             <CardContent className="p-6">
