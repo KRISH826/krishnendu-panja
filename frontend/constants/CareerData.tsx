@@ -6,6 +6,7 @@ import { FiBriefcase } from 'react-icons/fi';
 import { FaArrowRight, FaMapMarkerAlt, FaClock, FaFire } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
 import { cn } from '@/lib/utils';
+import { motion } from "motion/react";
 
 
 export type Career1JobType = 'Full-time' | 'Part-time' | 'Contract' | 'Internship';
@@ -215,18 +216,30 @@ function JobRow({
 
   if (renderLink) {
     return (
-      <li className="border-b border-border last:border-b-0">
+      <motion.li
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.4 }}
+        className="border-b border-border last:border-b-0"
+      >
         {renderLink({ href, label, children: rowContent })}
-      </li>
+      </motion.li>
     );
   }
 
   return (
-    <li className="border-b border-border last:border-b-0">
+    <motion.li
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.4 }}
+      className="border-b border-border last:border-b-0"
+    >
       <a href={href} aria-label={label} className="block">
         {rowContent}
       </a>
-    </li>
+    </motion.li>
   );
 }
 
@@ -286,7 +299,13 @@ export default function CareerData({
       <div className="mx-auto container">
 
 
-        <div className="mb-10 space-y-4 sm:mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="mb-10 space-y-4 sm:mb-12"
+        >
 
           {badge && (
             <div className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
@@ -318,10 +337,16 @@ export default function CareerData({
               {description}
             </p>
           )}
-        </div>
+        </motion.div>
 
         {departments.length > 0 && (
-          <div className="mb-8 flex flex-wrap gap-2">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="mb-8 flex flex-wrap gap-2"
+          >
             {departments.map((dept) => (
               <DeptTab
                 key={dept.value}
@@ -331,7 +356,7 @@ export default function CareerData({
                 onClick={() => setActiveTab(dept.value)}
               />
             ))}
-          </div>
+          </motion.div>
         )}
 
         <div className="rounded-xl border border-border bg-card px-4 sm:px-6">
@@ -348,7 +373,7 @@ export default function CareerData({
               </span>
               <p className="text-sm font-medium text-foreground">No openings right now</p>
               <p className="max-w-xs text-xs text-muted-foreground">
-                We don't have any open roles in this department at the moment. Check back soon!
+                We don&lsquo;t have any open roles in this department at the moment. Check back soon!
               </p>
             </div>
           )}
