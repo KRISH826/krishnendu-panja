@@ -50,7 +50,7 @@ export default function Hero3({
     primaryCtaLabel = 'View Work',
     primaryCtaHref = '#',
     secondaryCtaLabel = 'Start Journey',
-    secondaryCtaHref = '#',
+    secondaryCtaHref = '#about',
     bottomTagline = 'Transforming creative thinking\ninto impactful solutions that\ndrive real results.',
     scrollText = 'Scroll to Discover',
 }: Hero3Props) {
