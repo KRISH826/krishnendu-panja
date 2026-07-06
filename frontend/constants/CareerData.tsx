@@ -295,7 +295,7 @@ export default function CareerData({
     value === 'all' ? jobs.length : jobs.filter((j) => j.department === value).length;
 
   return (
-    <section className={cn('w-full bg-background py-8', className)}>
+    <section className={cn('w-full bg-background', className)}>
       <div className="mx-auto container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

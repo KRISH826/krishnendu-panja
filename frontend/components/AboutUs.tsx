@@ -3,6 +3,7 @@
 import React from 'react'
 import { HiSparkles, HiCheckCircle } from 'react-icons/hi2'
 import { motion } from "motion/react";
+import { MapDestination } from './MapDestination';
 
 type Highlight = {
     label: string;
@@ -46,7 +47,11 @@ const AboutUs = ({
     return (
         <section className='about_us_sec'>
             <div className="container">
-                <div className='grid lg:grid-cols-2 grid-cols-1 gap-10'>
+                <motion.div initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.5 }}
+                    className='grid lg:grid-cols-2 items-center grid-cols-1 gap-10'>
                     <div className="content">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -105,7 +110,10 @@ const AboutUs = ({
                             )}
                         </motion.div>
                     </div>
-                </div>
+                    <div className="map">
+                        <MapDestination />
+                    </div>
+                </motion.div>
             </div>
         </section>
     )
