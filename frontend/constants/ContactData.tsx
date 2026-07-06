@@ -1,9 +1,12 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { FaArrowRight } from 'react-icons/fa';
+import { motion } from "motion/react";
 
 interface Contact7Props {
   heading: string;
@@ -65,7 +68,13 @@ export function Contact7({
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-3xl text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="mx-auto max-w-3xl text-center"
+        >
           <div className="text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium">
             <span className="bg-primary size-1.5 rounded-full" />
             {subheading}
@@ -73,9 +82,15 @@ export function Contact7({
           <h2 className="text-foreground mt-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             {heading}
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="mx-auto mt-16 max-w-lg">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mx-auto mt-16 max-w-lg"
+        >
           <div className="border-border/50 bg-card/40 rounded-3xl border p-6 shadow-sm backdrop-blur-xl sm:p-10 lg:p-8">
             <form className="grid gap-4">
               <div className="grid gap-6 md:grid-cols-1">
@@ -153,7 +168,7 @@ export function Contact7({
                   type="submit"
                   variant="default"
                   size="lg"
-                  className="h-12 w-full max-w-sm gap-2 rounded-xl px-8 sm:w-auto"
+                  className="h-12 w-full max-w-sm gap-2 rounded-xl px-8 sm:w-auto hover:-translate-y-0.5 transition-transform duration-300"
                 >
                   {buttonText}
                   <FaArrowRight className="size-4" />
@@ -161,7 +176,7 @@ export function Contact7({
               </div>
             </form>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
