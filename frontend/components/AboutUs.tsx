@@ -45,7 +45,7 @@ const AboutUs = ({
     highlights = defaultHighlights,
 }: Props) => {
     return (
-        <section className='about_us_sec'>
+        <section className='about_us_sec' id="about">
             <div className="container">
                 <motion.div initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

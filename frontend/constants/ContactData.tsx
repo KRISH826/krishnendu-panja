@@ -26,7 +26,7 @@ interface Contact7Props {
   buttonText: string;
 }
 
-export function Contact7({
+export function ContactForm({
   heading,
   subheading,
   nameLabel,
@@ -68,7 +68,7 @@ export function Contact7({
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -84,7 +84,7 @@ export function Contact7({
           </h2>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

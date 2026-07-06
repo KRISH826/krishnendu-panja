@@ -1,7 +1,7 @@
 'use client'
 
 // import LogoIcon from '@/assets/logo-icon';
-import { ArrowRight, ArrowDown, Globe } from 'lucide-react';
+import { ArrowRight, ArrowDown } from 'lucide-react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 
@@ -32,15 +32,15 @@ interface Hero3Props {
 }
 
 export default function Hero3({
-    brandName = 'Watermelon',
+    brandName = 'Krishnendu Panja',
     navLinks = [
-        { label: 'Pricing', href: '#' },
-        { label: 'Products', href: '#' },
+        { label: 'Home', href: '/' },
         { label: 'About', href: '#' },
-        { label: 'Features', href: '#' },
-        { label: 'Support', href: '#' },
+        { label: 'Projects', href: '#' },
+        { label: 'Career', href: '#' },
+        { label: 'Delivery', href: '#' },
+        { label: 'Contact', href: '#' },
     ],
-    language = 'EN',
     signUpLabel = 'Sign up',
     signUpHref = '#',
     badgeText = '✦  Award-winning digital studio',

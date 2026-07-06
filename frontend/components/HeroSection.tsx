@@ -3,11 +3,11 @@ import React from 'react'
 
 const HeroSection = () => {
     const customNavLinks = [
-        { label: "Home", href: "#" },
-        { label: "Experience", href: "#" },
-        { label: "Projects", href: "#" },
-        { label: "Skills", href: "#" },
-        { label: "Contact", href: "#" },
+        { label: "About", href: "#about" },
+        { label: "Projects", href: "#projects" },
+        { label: "Career", href: "#career" },
+        { label: "Delivery", href: "#delivery" },
+        { label: "Contact", href: "#contact" },
     ];
     return (
         <section>
