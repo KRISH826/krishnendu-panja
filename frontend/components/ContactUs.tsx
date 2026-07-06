@@ -1,9 +1,9 @@
-import { Contact7 } from "@/constants/ContactData";
+import { ContactForm } from "@/constants/ContactData";
 
 
 export default function ContactUs() {
   return (
-    <Contact7
+    <ContactForm
       subheading="CONNECT WITH ME"
       heading="Let's Start a Conversation"
       nameLabel="Full Name *"

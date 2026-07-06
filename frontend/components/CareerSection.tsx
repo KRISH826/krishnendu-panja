@@ -3,7 +3,9 @@ import CareerData from '@/constants/CareerData'
 
 const CareerSection = () => {
   return (
-    <CareerData />
+    <section className='career_sec' id='projects'>
+      <CareerData />
+    </section>
   )
 }
 
