@@ -27,7 +27,7 @@ export default function FeaturesData() {
   };
 
   return (
-    <div className="theme-injected flex w-full flex-col items-center justify-center">
+    <div className="theme-injected flex w-full flex-col items-center justify-center" id="work">
       <div className="container">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
