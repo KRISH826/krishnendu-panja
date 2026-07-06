@@ -7,11 +7,13 @@ import HeroSection from "@/components/HeroSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <AboutUs />
-      <CareerSection />
-      <FeatureSection />
-      <ContactUs />
+      <main className=" w-full flex flex-col lg:gap-20 sm:gap-14 gap-8">
+        <HeroSection />
+        <AboutUs />
+        <CareerSection />
+        <FeatureSection />
+        <ContactUs />
+      </main>
     </>
   );
 }
