@@ -280,7 +280,7 @@ export default function Hero3({
                         </motion.p>
 
                         <motion.a
-                            href="#next-section"
+                            href="#about"
                             className="flex items-center gap-2.5 text-white/55 hover:text-white/90 text-[13px] md:text-[14px] transition-colors shrink-0 group"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
