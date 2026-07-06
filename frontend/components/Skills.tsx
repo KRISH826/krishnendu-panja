@@ -1,10 +1,11 @@
-import React from 'react'
+"use client"
+import SkillIntegration from './ui/components/SkillInteraction'
 
 const SkillSection = () => {
     return (
-        <div className='skills-section'>
-
-        </div>
+        <section className='skills-section'>
+            <SkillIntegration />
+        </section>
     )
 }
 
