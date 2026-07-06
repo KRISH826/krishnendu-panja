@@ -5,7 +5,7 @@ const HeroSection = () => {
     const customNavLinks = [
         { label: "About", href: "#about" },
         { label: "Projects", href: "#projects" },
-        { label: "Skills", href: "#career" },
+        { label: "Skills", href: "#skills" },
         { label: "Work", href: "#work" },
         { label: "Contact", href: "#contact" },
     ];
