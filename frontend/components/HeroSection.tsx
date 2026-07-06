@@ -4,9 +4,9 @@ import React from 'react'
 const HeroSection = () => {
     const customNavLinks = [
         { label: "About", href: "#about" },
+        { label: "Skills", href: "#skills" },
         { label: "Projects", href: "#projects" },
-        { label: "Career", href: "#career" },
-        { label: "Delivery", href: "#delivery" },
+        { label: "Work", href: "#work" },
         { label: "Contact", href: "#contact" },
     ];
     return (
