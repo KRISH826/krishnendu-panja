@@ -7,6 +7,7 @@ import { FaArrowRight, FaMapMarkerAlt, FaClock, FaFire } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
 import { cn } from '@/lib/utils';
 import { motion } from "motion/react";
+import { defaultJobs } from './data/data';
 
 
 export type Career1JobType = 'Full-time' | 'Part-time' | 'Contract' | 'Internship';
@@ -54,55 +55,17 @@ export interface Career1Props {
 
 const defaultDepartments: Career1Department[] = [
   { label: 'All', value: 'all' },
-  { label: 'Experience', value: 'Experience' },
-  { label: 'Projects', value: 'Projects' },
+  { label: 'Website', value: 'Website' },
+  { label: 'Application', value: 'Application' },
+  { label: 'Full Stack', value: 'Full Stack' },
 ];
 
-const defaultJobs: CareerData[] = [
-  {
-    id: 'sentientgeeks',
-    title: 'UI Developer and Frontend Engineer @ SentientGeeks',
-    description: 'Boosted user engagement by 80% by leading UI/UX development. Orchestrated React 18 migration, eliminating 30% of legacy code.',
-    department: 'Experience',
-    location: 'Hybrid',
-    type: 'Full-time',
-    featured: true,
-    href: '#',
-  },
-  {
-    id: 'finreg',
-    title: 'UI Lead and Frontend Engineer - FINREG-E.COM',
-    description: 'Improved user engagement by 85% by overseeing a comprehensive platform-wide UI/UX redesign. Engineered sophisticated RIG module using Angular, Material UI, and SCSS.',
-    department: 'Projects',
-    location: 'Remote',
-    type: 'Full-time',
-    href: 'https://finreg-e.com/',
-  },
-  {
-    id: 'fca',
-    title: 'UI and Frontend Engineer Lead - FCA.ORG.UK',
-    description: 'Increased user engagement by 90% by directing UI/UX design. Ensured full WCAG 2.1 accessibility compliance. Engineered custom frontend framework using SCSS within Angular.',
-    department: 'Projects',
-    location: 'Remote',
-    type: 'Contract',
-    featured: true,
-    href: 'https://www.fca.org.uk/',
-  },
-  {
-    id: 'classpoint',
-    title: 'Frontend Developer - CLASSPOINT.APP',
-    description: 'Led UI/UX design and development for an Edtech learning platform. Designed animated learning interface using React, Material UI, and custom SCSS.',
-    department: 'Projects',
-    location: 'Remote',
-    type: 'Full-time',
-    href: 'https://www.classpoint.app/',
-  },
-];
+
 
 const defaultCta: Career1Cta = {
-  text: "Looking for a seasoned UI/Frontend expert?",
+  text: "Interested in working together on a project?",
   linkLabel: 'Download My Resume',
-  href: '#',
+  href: '/resume.pdf',
 };
 
 
@@ -276,10 +239,11 @@ function CtaBanner({
 
 
 export default function CareerData({
-  badge = 'Experience & Projects',
-  heading = 'My Professional',
-  headingHighlight = 'Journey',
-  description = 'Explore my professional experience, the diverse projects I have led, and the impact I\'ve made as a Senior Frontend Engineer.',
+  badge = 'My Projects',
+  heading = 'Things I Have',
+  headingHighlight = 'Built',
+  description = 'A curated collection of websites, applications, and full-stack products I have designed and engineered — each one shipped with precision, performance, and real-world impact.',
+
   departments = defaultDepartments,
   jobs = defaultJobs,
   cta = defaultCta,
