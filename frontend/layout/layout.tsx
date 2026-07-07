@@ -9,16 +9,22 @@ const Pagelayout = ({ children }: { children: React.ReactNode }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false)
-        }, 3000)
+        }, 2500)
         return () => {
             clearTimeout(timer)
         }
     }, [])
     return (
         <>
-            <Header />
-            {loading ? <SplashScreen /> : <>{children}</>}
-            <Footer />
+            {
+                loading ? <>
+                    <SplashScreen />
+                </> : <>
+                    <Header />
+                    {children}
+                    <Footer />
+                </>
+            }
         </>
     )
 }
