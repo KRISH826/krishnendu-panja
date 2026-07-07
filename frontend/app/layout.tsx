@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const monsterrat = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -20,7 +21,9 @@ export default function RootLayout({
       className={`${monsterrat.variable} h-full antialiased dark`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}</body>
     </html>
   );
 }
