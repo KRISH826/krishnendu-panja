@@ -2,22 +2,10 @@ import Hero3 from '@/constants/HeroData'
 import React from 'react'
 
 const HeroSection = () => {
-    const customNavLinks = [
-        { label: "About", href: "#about" },
-        { label: "Skills", href: "#skills" },
-        { label: "Projects", href: "#projects" },
-        { label: "Work", href: "#work" },
-        { label: "Contact", href: "#contact" },
-    ];
     return (
         <section>
             <div className="bg-background flex min-h-screen w-full flex-col justify-center">
                 <Hero3
-                    brandName="KRISHNENDU PANJA"
-                    navLinks={customNavLinks}
-                    language="EN"
-                    signUpLabel="Download Cv"
-                    signUpHref="/resume.pdf"
                     badgeText="✦  Senior Full Stack Engineer"
                     headingLine1="Engineering Scalable"
                     headingLine2="Full-Stack Solutions."

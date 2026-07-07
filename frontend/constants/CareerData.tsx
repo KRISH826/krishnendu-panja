@@ -270,10 +270,11 @@ export default function CareerData({
         >
 
           {badge && (
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-              <HiSparkles className="size-3 text-foreground" />
-              {badge}
-            </div>
+            <span className="relative inline-flex items-center px-4 py-1.5 rounded-full text-[12px] md:text-[13px] font-medium text-white/90 border border-white/20 bg-white/5 backdrop-blur-sm overflow-hidden">
+              {/* Shimmer sweep */}
+              <span className="absolute inset-0 -translate-x-full animate-[shimmer_3s_infinite] bg-linear-to-r from-transparent via-white/10 to-transparent" />
+              <span className="relative flex items-center gap-1"><HiSparkles className="size-3 text-foreground" /> {badge}</span>
+            </span>
           )}
 
 

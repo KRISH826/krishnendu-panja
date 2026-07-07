@@ -64,14 +64,15 @@ export default function SkillIntegration() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.7 }}
-                    className="mx-auto mb-16 flex max-w-2xl flex-col items-center text-center md:mb-12"
+                    className="mx-auto mb-16 flex max-w-4xl flex-col items-center text-center md:mb-12"
                 >
-                    <div className="mb-6 inline-flex items-center gap-1.5 rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-                        <HiSparkles className="size-3 text-foreground" />
-                        My Skills
-                    </div>
+                    <span className="relative inline-flex items-center px-5 py-1.5 rounded-full text-[12px] md:text-[13px] font-medium text-white/90 border border-white/20 bg-white/5 backdrop-blur-sm overflow-hidden">
+                        {/* Shimmer sweep */}
+                        <span className="absolute inset-0 -translate-x-full animate-[shimmer_3s_infinite] bg-linear-to-r from-transparent via-white/10 to-transparent" />
+                        <span className="relative flex items-center gap-1"><HiSparkles className="size-3 text-foreground" /> My Skills </span>
+                    </span>
                     <h2 className="text-foreground mb-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-                        Modern tech stack for scalable solutions
+                        The tools I use to ship fast,<br /> scalable products
                     </h2>
                 </motion.div>
 
