@@ -1,11 +1,10 @@
 import React from 'react'
+import ExperienceStep from './ui/components/ExperienceStep'
 
 const Experience = () => {
     return (
         <section>
-            <div>
-                Experience
-            </div>
+            <ExperienceStep />
         </section>
     )
 }
