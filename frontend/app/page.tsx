@@ -4,7 +4,7 @@ import ContactUs from "@/components/ContactUs";
 import FeatureSection from "@/components/FeatureSection";
 import HeroSection from "@/components/HeroSection";
 import SkillSection from "@/components/Skills";
-import Footer from "@/components/footer";
+
 
 export default function Home() {
   return (
@@ -16,7 +16,6 @@ export default function Home() {
         <CareerSection />
         <FeatureSection />
         <ContactUs />
-        <Footer />
       </main>
     </>
   );

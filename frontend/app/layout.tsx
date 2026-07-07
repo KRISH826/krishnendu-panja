@@ -21,8 +21,7 @@ export default function RootLayout({
       className={`${monsterrat.variable} h-full antialiased dark`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
-        <Header />
+      <body className="min-h-full">
         {children}</body>
     </html>
   );
