@@ -92,9 +92,20 @@ export const experiences: Experience[] = [
         ],
     },
     {
-        title: "UI/UX Developer and Designer",
+        title: "UI/UX Developer and Frontend Developer",
         job: "Sentientgeeks",
-        date: "2023-Present",
+        date: "2023-2025",
+        contents: [
+            "Led end-to-end UI/UX development for high-traffic web applications using Angular, React,and Next.js, from wireframing to frontend implementation",
+            "Architected scalable, component-driven interfaces with Tailwind CSS and Chakra UI,reducing development cycles by 15% and increasing conversion metrics by 20%",
+            "Conducted user research, usability testing, and A/B testing while collaborating with cross functional teams to deliver pixel-perfect, responsive designs",
+            "Spearheaded migration from legacy codebase to modern React framework, reducing technical debt and improving maintainability",
+        ],
+    },
+    {
+        title: "Senior Frontend Developer and Full Stack Engineer",
+        job: "Sentientgeeks",
+        date: "2025-Present",
         contents: [
             "Led end-to-end UI/UX development for high-traffic web applications using Angular, React,and Next.js, from wireframing to frontend implementation",
             "Architected scalable, component-driven interfaces with Tailwind CSS and Chakra UI,reducing development cycles by 15% and increasing conversion metrics by 20%",
