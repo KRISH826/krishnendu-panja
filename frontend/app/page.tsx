@@ -1,6 +1,7 @@
 import AboutUs from "@/components/AboutUs";
 import CareerSection from "@/components/CareerSection";
 import ContactUs from "@/components/ContactUs";
+import Experience from "@/components/Experience";
 import FeatureSection from "@/components/FeatureSection";
 import HeroSection from "@/components/HeroSection";
 import SkillSection from "@/components/Skills";
@@ -16,6 +17,7 @@ export default function Home() {
           <AboutUs />
           <SkillSection />
           <CareerSection />
+          <Experience />
           <FeatureSection />
           <ContactUs />
         </main>

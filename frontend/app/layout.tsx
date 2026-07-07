@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Cinzel, Montserrat } from "next/font/google";
+import { Cinzel, Montserrat, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
 const monsterrat = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 const cinzel = Cinzel({ subsets: ["latin"], variable: "--font-cinzel" });
+const dancingScript = Dancing_Script({ subsets: ["latin"], variable: "--font-cursive" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${monsterrat.variable} ${cinzel.variable} h-full antialiased dark`}
+      className={`${monsterrat.variable} ${cinzel.variable} ${dancingScript.variable} h-full antialiased dark`}
       suppressHydrationWarning
     >
       <body className="min-h-full">
