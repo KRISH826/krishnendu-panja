@@ -9,6 +9,7 @@ import React, { useEffect, useRef, useState } from "react";
 interface TimelineEntry {
     title: string;
     contents: React.ReactNode;
+    job: string;
     date: string
 }
 
@@ -41,7 +42,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 {data.map((item, index) => (
                     <div
                         key={index}
-                        className="flex flex-col justify-start pt-6 md:pt-20 md:gap-10"
+                        className="flex flex-col justify-start pt-10 md:pt-24 md:gap-7"
                     >
                         <div className="flex flex-col z-40 items-center self-start">
                             <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
@@ -55,6 +56,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                             <h3 className="md:hidden block text-2xl mb-2 text-left font-bold text-neutral-500 dark:text-neutral-500">
                                 {item.title}
                             </h3>
+                            <span className="text-sm block w-fit mb-4 px-5 py-1.5 backdrop-blur-xl bg-white/5 font-medium border rounded-lg">{item.job}</span>
                             <h5 className="font-bold text-lg mb-2">{item.date}</h5>
                             <p className='text-base text-white/80'>{item.contents}</p>
                         </div>
