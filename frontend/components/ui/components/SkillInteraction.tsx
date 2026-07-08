@@ -71,8 +71,8 @@ export default function SkillIntegration() {
                         <span className="absolute inset-0 -translate-x-full animate-[shimmer_3s_infinite] bg-linear-to-r from-transparent via-white/10 to-transparent" />
                         <span className="relative flex items-center gap-1"><HiSparkles className="size-3 text-foreground" /> My Skills </span>
                     </span>
-                    <h2 className="text-foreground mb-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-                        The tools I use to ship fast,<br /> scalable products
+                    <h2 className="sm:mt-0 mt-2 text-foreground mb-6 text-2xl sm:text-4xl font-bold tracking-tight xl:text-5xl 2xl:text-6xl">
+                        The tools I use to ship fast,<br className="hidden md:block" /> scalable products
                     </h2>
                 </motion.div>
 

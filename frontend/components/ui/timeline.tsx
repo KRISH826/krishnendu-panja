@@ -53,12 +53,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                             </h3>
                         </div>
                         <div className="relative pl-20 pr-4 md:pl-20 w-full">
-                            <h3 className="md:hidden block text-2xl mb-2 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                            <h3 className="md:hidden block sm:text-2xl text-xl mb-2 text-left font-bold text-neutral-500 dark:text-neutral-500">
                                 {item.title}
                             </h3>
                             <span className="text-sm block w-fit mb-4 px-5 py-1.5 backdrop-blur-xl bg-white/5 font-medium border rounded-lg">{item.job}</span>
                             <h5 className="font-bold text-lg mb-2">{item.date}</h5>
-                            <p className='text-base text-white/80'>{item.contents}</p>
+                            <p className='sm:text-base text-sm text-white/80'>{item.contents}</p>
                         </div>
                     </div>
                 ))}

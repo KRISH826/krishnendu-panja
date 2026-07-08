@@ -40,7 +40,7 @@ const arcs = destinations.map((dest) => ({
 
 export function MapDestination() {
     return (
-        <div className="h-[500px] w-full">
+        <div className="sm:h-[500px] h-[400px] w-full">
             <Map center={[55, hub.lat]} zoom={1.75} projection={{ type: "globe" }}>
                 <MapArc
                     data={arcs}

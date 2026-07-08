@@ -93,7 +93,7 @@ export default function Hero3({
                         </motion.div>
 
                         {/* Heading — word-by-word stagger */}
-                        <h1 className="text-white text-[40px] sm:text-[52px] md:text-[60px] lg:text-[68px] font-medium leading-[1.05] tracking-tight mb-6 md:mb-8">
+                        <h1 className="text-white text-3xl sm:text-[40px] md:text-[48px] lg:text-[68px] font-medium leading-[1.05] tracking-tight mb-6 md:mb-8">
                             <span className="block overflow-hidden">
                                 {line1Words.map((word, i) => (
                                     <motion.span
