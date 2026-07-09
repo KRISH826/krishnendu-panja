@@ -3,7 +3,6 @@
 // import LogoIcon from '@/assets/logo-icon';
 import { ArrowRight, ArrowDown } from 'lucide-react';
 import { motion } from 'motion/react';
-import Link from 'next/link';
 
 interface NavLink {
     label: string;
