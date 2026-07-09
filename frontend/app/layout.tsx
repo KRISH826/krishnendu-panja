@@ -22,7 +22,7 @@ export default function RootLayout({
       className={`${monsterrat.variable} ${cinzel.variable} ${dancingScript.variable} h-full antialiased dark`}
       suppressHydrationWarning
     >
-      <body className="min-h-full">
+      <body className="min-h-full overflow-x-hidden">
         {children}</body>
     </html>
   );
