@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import type { ReactNode } from 'react';
 import { FiBriefcase } from 'react-icons/fi';
 import { FaArrowRight, FaMapMarkerAlt, FaClock, FaFire } from 'react-icons/fa';
 import { HiSparkles } from 'react-icons/hi';
@@ -44,12 +43,6 @@ export interface Career1Props {
   jobs?: CareerData[];
   cta?: Career1Cta;
   className?: string;
-  renderLink?: (props: {
-    href: string;
-    label: string;
-    children: ReactNode;
-    className?: string;
-  }) => ReactNode;
 }
 
 
@@ -117,13 +110,7 @@ function DeptTab({
   );
 }
 
-function JobRow({
-  job,
-  renderLink,
-}: {
-  job: CareerData;
-  renderLink?: Career1Props['renderLink'];
-}) {
+function JobRow({ job }: { job: CareerData }) {
   const rowContent = (
     <div
       className={cn(
@@ -177,20 +164,6 @@ function JobRow({
   const href = job.href ?? '#';
   const label = `View ${job.title} role`;
 
-  if (renderLink) {
-    return (
-      <motion.li
-        initial={{ opacity: 0, x: -20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.4 }}
-        className="border-b border-border last:border-b-0"
-      >
-        {renderLink({ href, label, children: rowContent })}
-      </motion.li>
-    );
-  }
-
   return (
     <motion.li
       initial={{ opacity: 0, x: -20 }}
@@ -206,23 +179,9 @@ function JobRow({
   );
 }
 
-function CtaBanner({
-  cta,
-  renderLink,
-}: {
-  cta: Career1Cta;
-  renderLink?: Career1Props['renderLink'];
-}) {
-  const linkContent = (
-    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground hover:underline underline-offset-4 transition-all">
-      {cta.linkLabel}
-      <FaArrowRight className="size-3" />
-    </span>
-  );
-
-  const renderedLink = renderLink
-    ? renderLink({ href: cta.href ?? '#', label: cta.linkLabel, children: linkContent })
-    : <a href={cta.href ?? '#'}>{linkContent}</a>;
+function CtaBanner({ cta }: { cta: Career1Cta }) {
+  const href = cta.href ?? '#';
+  const isDownload = href.endsWith('.pdf');
 
   return (
     <div className="mt-6 flex flex-col items-start gap-3 rounded-xl border border-border bg-muted/50 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
@@ -232,7 +191,14 @@ function CtaBanner({
         </span>
         <p className="text-sm text-muted-foreground">{cta.text}</p>
       </div>
-      {renderedLink}
+      <a
+        href={href}
+        download={isDownload}
+        className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground hover:underline underline-offset-4 transition-all"
+      >
+        {cta.linkLabel}
+        <FaArrowRight className="size-3" />
+      </a>
     </div>
   );
 }
@@ -243,12 +209,10 @@ export default function CareerData({
   heading = 'Things I Have',
   headingHighlight = 'Built',
   description = 'A curated collection of websites, applications, and full-stack products I have designed and engineered — each one shipped with precision, performance, and real-world impact.',
-
   departments = defaultDepartments,
   jobs = defaultJobs,
   cta = defaultCta,
   className,
-  renderLink,
 }: Career1Props) {
   const [activeTab, setActiveTab] = useState<string>('all');
 
@@ -325,7 +289,7 @@ export default function CareerData({
           {filteredJobs.length > 0 ? (
             <ul role="list">
               {filteredJobs.map((job) => (
-                <JobRow key={job.id} job={job} renderLink={renderLink} />
+                <JobRow key={job.id} job={job} />
               ))}
             </ul>
           ) : (
@@ -340,7 +304,7 @@ export default function CareerData({
             </div>
           )}
         </div>
-        {cta && <CtaBanner cta={cta} renderLink={renderLink} />}
+        {cta && <CtaBanner cta={cta} />}
       </div>
     </section>
   );

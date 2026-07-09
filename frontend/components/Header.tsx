@@ -10,7 +10,7 @@ const navLinks = [
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
-    {label: 'Experience', href: '#experience'},
+    { label: 'Experience', href: '#experience'},
     { label: 'Features', href: '#features' },
     { label: 'Contact', href: '#contact' },
 ]
@@ -82,6 +82,7 @@ const Header = () => {
                     <div className="flex items-center gap-4 md:gap-6">
                         <motion.a
                             href={signUpHref}
+                            download
                             className="hidden sm:inline-flex border border-white/80 text-white rounded-full px-6 py-2 text-[14px] font-medium relative overflow-hidden group"
                             whileHover={{ scale: 1.03 }}
                             whileTap={{ scale: 0.97 }}
@@ -180,6 +181,7 @@ const Header = () => {
                             <div className="mt-auto pt-8">
                                 <motion.a
                                     href={signUpHref}
+                                    download
                                     onClick={closeDrawer}
                                     className="flex w-full items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition hover:bg-white/90"
                                     whileTap={{ scale: 0.98 }}
