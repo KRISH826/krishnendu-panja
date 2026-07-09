@@ -8,9 +8,10 @@ import Link from 'next/link'
 const navLinks = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '#about' },
-    { label: 'Projects', href: '#' },
-    { label: 'Career', href: '#' },
-    { label: 'Delivery', href: '#' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Projects', href: '#projects' },
+    {label: 'Experience', href: '#experience'},
+    { label: 'Features', href: '#features' },
     { label: 'Contact', href: '#contact' },
 ]
 const signUpHref = '/resume.pdf'

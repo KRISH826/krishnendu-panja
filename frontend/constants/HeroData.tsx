@@ -25,13 +25,13 @@ interface Hero3Props {
     scrollText?: string;
 }
 
-export default function Hero3({
+export default function Hero({
     badgeText = '✦  Award-winning digital studio',
     headingLine1 = 'Building bold ideas',
     headingLine2 = 'into reality.',
     description = 'Experiences that stand strong, scale fast, and look exceptional. We help brands and businesses design meaningful digital',
     primaryCtaLabel = 'View Work',
-    primaryCtaHref = '#',
+    primaryCtaHref = 'https://www.myportfolio.krishnendupanja.online/',
     secondaryCtaLabel = 'Start Journey',
     secondaryCtaHref = '#about',
     bottomTagline = 'Transforming creative thinking\ninto impactful solutions that\ndrive real results.',
